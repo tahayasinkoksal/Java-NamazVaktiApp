@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_arkaplan"
+    tools:context=".VakitIndirActivity"
+    tools:layout_editor_absoluteY="25dp">
+
+    <TextView
+        android:id="@+id/vakitIndiriliyor_text"
+        android:layout_width="wrap_content"
+        android:layout_height="377dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="@string/vakitler_indiriliyor"
+        android:textColor="@color/yaziRengi_3"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/herseyHazit_text"
+        android:layout_width="384dp"
+        android:layout_height="98dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:text="@string/bitti_sayilir"
+        android:textColor="@color/yaziRengi_2"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vakitIndiriliyor_text" />
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_arkaplan"
+    tools:context=".SehirSecActivity">
+
+    <ListView
+        android:id="@+id/sehirListView"
+        android:layout_width="344dp"
+        android:layout_height="486dp"
+        android:textColor="@color/yaziRengi_3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/sehirSecLinear"
+        android:layout_width="344dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="2dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sehirListView">
+
+        <TextView
+            android:id="@+id/sehirSecText"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/sehir_sec"
+            android:textColor="@color/yaziRengi_3"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/devamEtButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="ilceSec"
+            android:text="@string/devam_et"
+            android:textColor="@color/yaziRengi_2" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

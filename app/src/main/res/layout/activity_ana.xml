@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_arkaplan"
+    tools:layout_editor_absoluteY="81dp"
+    tools:context=".AnaActivity">
+
+    <ImageView
+        android:id="@+id/altBar_imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="67dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/alt_bar"
+        android:contentDescription="@string/alt_bar"/>
+
+    <ImageView
+        android:id="@+id/zil_imageView"
+        android:layout_width="37dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="3dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/altBar_imageView"
+        app:srcCompat="@drawable/zil_logo"
+        android:contentDescription="@string/uyari_logo"/>
+
+    <TextView
+        android:id="@+id/uyari_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/uyarilar"
+        android:textColor="@android:color/background_light"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/zil_imageView"
+        app:layout_constraintStart_toStartOf="@+id/zil_imageView"
+        app:layout_constraintTop_toBottomOf="@+id/zil_imageView" />
+
+    <ImageView
+        android:id="@+id/kuran_imageView"
+        android:layout_width="37dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="3dp"
+        android:contentDescription="@string/kuran_logo"
+        android:onClick="linkGonder"
+        app:layout_constraintStart_toEndOf="@+id/zil_imageView"
+        app:layout_constraintTop_toTopOf="@+id/altBar_imageView"
+        app:srcCompat="@drawable/kuran_logo" />
+
+    <TextView
+        android:id="@+id/kuran_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="linkGonder"
+        android:text="@string/kuran"
+        android:textColor="@android:color/background_light"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/kuran_imageView"
+        app:layout_constraintStart_toStartOf="@+id/kuran_imageView"
+        app:layout_constraintTop_toBottomOf="@+id/kuran_imageView" />
+
+    <ImageView
+        android:id="@+id/ayar_imageView"
+        android:layout_width="37dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="3dp"
+        app:layout_constraintStart_toEndOf="@+id/kuran_imageView"
+        app:layout_constraintTop_toTopOf="@+id/altBar_imageView"
+        app:srcCompat="@drawable/ayarlar_logo"
+        android:contentDescription="@string/ayar_logo"/>
+
+    <TextView
+        android:id="@+id/ayar_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ayarlar"
+        android:textColor="@android:color/background_light"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/ayar_imageView"
+        app:layout_constraintHorizontal_bias="0.538"
+        app:layout_constraintStart_toStartOf="@+id/ayar_imageView"
+        app:layout_constraintTop_toBottomOf="@+id/ayar_imageView" />
+
+    <ImageView
+        android:id="@+id/diger_imageView"
+        android:layout_width="37dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="3dp"
+        android:contentDescription="@string/diger_logo"
+        android:onClick="linkGonder"
+        app:layout_constraintStart_toEndOf="@+id/ayar_imageView"
+        app:layout_constraintTop_toTopOf="@+id/altBar_imageView"
+        app:srcCompat="@drawable/diger_logo" />
+
+    <TextView
+        android:id="@+id/diger_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="linkGonder"
+        android:text="@string/diger"
+        android:textColor="@android:color/background_light"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/diger_imageView"
+        app:layout_constraintStart_toStartOf="@+id/diger_imageView"
+        app:layout_constraintTop_toBottomOf="@+id/diger_imageView" />
+
+    <ImageView
+        android:id="@+id/koksal_imageView"
+        android:layout_width="37dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="@string/koksal_yazilim_logo"
+        android:onClick="linkGonder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/diger_imageView"
+        app:layout_constraintTop_toTopOf="@+id/altBar_imageView"
+        app:srcCompat="@drawable/koksal_logo" />
+
+    <TextView
+        android:id="@+id/koksal_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="2dp"
+        android:onClick="linkGonder"
+        android:text="@string/koksal_yazilim"
+        android:textColor="@android:color/background_light"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/koksal_imageView"
+        app:layout_constraintHorizontal_bias="0.66"
+        app:layout_constraintStart_toStartOf="@+id/koksal_imageView"
+        app:layout_constraintTop_toBottomOf="@+id/koksal_imageView" />
+
+    <ImageView
+        android:id="@+id/solMotif_imageView"
+        android:layout_width="96dp"
+        android:layout_height="190dp"
+        android:layout_marginBottom="90dp"
+        app:layout_constraintBottom_toTopOf="@+id/altBar_imageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/sol_motif"
+        android:contentDescription="@string/solmotif_logo"/>
+
+    <ImageView
+        android:id="@+id/sagMotif_imageView"
+        android:layout_width="96dp"
+        android:layout_height="190dp"
+        app:layout_constraintBottom_toBottomOf="@+id/solMotif_imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/solMotif_imageView"
+        app:srcCompat="@drawable/sag_motif"
+        android:contentDescription="@string/sagmotif_logo"/>
+
+    <ImageView
+        android:id="@+id/anaMotif_imageView"
+        android:layout_width="271dp"
+        android:layout_height="222dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="45dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ana_motif"
+        android:contentDescription="@string/orta_motif_logo"/>
+
+    <ImageView
+        android:id="@+id/ayLogo_imageView"
+        android:layout_width="72dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/ayinSekli_textView"
+        app:layout_constraintStart_toStartOf="@+id/ayinSekli_textView"
+        app:layout_constraintTop_toBottomOf="@+id/ayinSekli_textView"
+        app:srcCompat="@drawable/ay_logo"
+        android:contentDescription="@string/ayin_sekli"/>
+
+    <TextView
+        android:id="@+id/ayinSekli_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="2dp"
+        android:text="@string/ayin_sekli"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tarihBugun_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="10.06.2019"
+        android:textColor="@color/yaziRengi_4"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/ayLogo_imageView"
+        app:layout_constraintStart_toStartOf="@+id/ayLogo_imageView"
+        app:layout_constraintTop_toBottomOf="@+id/ayLogo_imageView" />
+
+    <ImageView
+        android:id="@+id/gunes_imageView"
+        android:layout_width="84dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="45dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/gunes_logo" />
+
+    <TextView
+        android:id="@+id/gunesinDogusu_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:gravity="center"
+        android:text="05:53\nGüneşin\nDoğuşu"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toStartOf="@+id/kibleSaati_textView"
+        app:layout_constraintTop_toTopOf="@+id/kibleSaati_textView" />
+
+    <TextView
+        android:id="@+id/kibleSaati_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:gravity="center"
+        android:text="12:04\nKıble\nSaati"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toEndOf="@+id/gunes_imageView"
+        app:layout_constraintStart_toStartOf="@+id/gunes_imageView"
+        app:layout_constraintTop_toBottomOf="@+id/gunes_imageView" />
+
+    <TextView
+        android:id="@+id/gunesinBatısı_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="19:04\nGüneşin\nBatışı"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toEndOf="@+id/kibleSaati_textView"
+        app:layout_constraintTop_toTopOf="@+id/kibleSaati_textView" />
+
+    <TextView
+        android:id="@+id/tarihHicri_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:text="17 ŞEVVAL 1440"
+        android:textColor="@color/yaziRengi_4"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="@+id/gunesinBatısı_textView"
+        app:layout_constraintStart_toStartOf="@+id/gunesinDogusu_textView"
+        app:layout_constraintTop_toBottomOf="@+id/gunesinDogusu_textView" />
+
+    <ImageView
+        android:id="@+id/vakitlerimageView"
+        android:layout_width="172dp"
+        android:layout_height="273dp"
+        app:layout_constraintBottom_toTopOf="@+id/altBar_imageView"
+        app:layout_constraintEnd_toStartOf="@+id/sagMotif_imageView"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toEndOf="@+id/solMotif_imageView"
+        app:layout_constraintTop_toBottomOf="@+id/anaMotif_imageView"
+        app:srcCompat="@drawable/vakit_tablo"
+        android:contentDescription="@string/namaz_vakitleri_logo"/>
+
+    <TextView
+        android:id="@+id/imsaktextView"
+        android:layout_width="134dp"
+        android:layout_height="16dp"
+        android:layout_marginTop="70dp"
+        android:text="İmsak: 03:17"
+        android:textColor="@android:color/background_dark"
+        app:layout_constraintEnd_toEndOf="@+id/vakitlerimageView"
+        app:layout_constraintStart_toStartOf="@+id/vakitlerimageView"
+        app:layout_constraintTop_toTopOf="@+id/vakitlerimageView" />
+
+    <TextView
+        android:id="@+id/gunestextView"
+        android:layout_width="134dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Güneş: 05:30"
+        android:textColor="@android:color/background_dark"
+        app:layout_constraintEnd_toEndOf="@+id/vakitlerimageView"
+        app:layout_constraintStart_toStartOf="@+id/vakitlerimageView"
+        app:layout_constraintTop_toBottomOf="@+id/imsaktextView" />
+
+    <TextView
+        android:id="@+id/ogletextView"
+        android:layout_width="134dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Öğle: 12:45"
+        android:textColor="@android:color/background_dark"
+        app:layout_constraintEnd_toEndOf="@+id/vakitlerimageView"
+        app:layout_constraintStart_toStartOf="@+id/vakitlerimageView"
+        app:layout_constraintTop_toBottomOf="@+id/gunestextView" />
+
+    <TextView
+        android:id="@+id/ikinditextView"
+        android:layout_width="134dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="İkindi: 12:45"
+        android:textColor="@android:color/background_dark"
+        app:layout_constraintEnd_toEndOf="@+id/vakitlerimageView"
+        app:layout_constraintStart_toStartOf="@+id/vakitlerimageView"
+        app:layout_constraintTop_toBottomOf="@+id/ogletextView" />
+
+    <TextView
+        android:id="@+id/aksamtextView"
+        android:layout_width="134dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Akşam: 20:19"
+        android:textColor="@android:color/background_dark"
+        app:layout_constraintEnd_toEndOf="@+id/vakitlerimageView"
+        app:layout_constraintStart_toStartOf="@+id/vakitlerimageView"
+        app:layout_constraintTop_toBottomOf="@+id/ikinditextView" />
+
+    <TextView
+        android:id="@+id/yatsitextView"
+        android:layout_width="134dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Yatsı: 22:04"
+        android:textColor="@android:color/background_dark"
+        app:layout_constraintEnd_toEndOf="@+id/vakitlerimageView"
+        app:layout_constraintStart_toStartOf="@+id/vakitlerimageView"
+        app:layout_constraintTop_toBottomOf="@+id/aksamtextView" />
+
+    <TextView
+        android:id="@+id/kalanSureTextView"
+        android:layout_width="79dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:text="10s12dk"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/vakitlerimageView"
+        app:layout_constraintTop_toTopOf="@+id/vakitlerimageView" />
+
+</android.support.constraint.ConstraintLayout>

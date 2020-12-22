@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">NamazVakitleri</string>
+
+    <string name="yanlisGitti">Maalesef Birşeyler Yanlış Gitti! \n\n Baştan Başlamalıyız</string>
+    <string name="tekrarBasla">Hadi Tekrar Başlayalım</string>
+    <string name="internetteSikinti">İNTERNET BAĞLANTINDA SIKINTI OLABİLİR Mİ?</string>
+    <string name="sunucudaSikinti">Sunucudaki Yoğunluktan Dolayı da Sıkıntı Olabilir\nSorun devam ederse lütfen 30dk sonra tekrar deneyin.</string>
+    <string name="baslayalim">Hadi Başlayalım</string>
+    <string name="baslamdanOnce">Başlamdan önce\n bir kaç ayar yapmamız lazım</string>
+    <string name="baslama_ayar">Merak etme uzun sürmeyecek. \n\n\nBirazdan gelecek olan ekrandan\n İL ve İLÇE seçimi\n yapacaksın sonrasında\n uygulamayı gönül rahatlığıyla kullanabilirsin.</string>
+
+    <string name="sehir_sec">ŞEHİR SEÇ</string>
+    <string name="ilce_sec">İLÇE SEÇ</string>
+    <string name="devam_et">Devam Et</string>
+    <string name="vakitler_indiriliyor">30 Günlük Namaz Vakitleri Cihazınıza Kaydediliyor\nLütfen Bekleyin..\n\nSonraki 30 günde tekrar vakitleri indirmek gerekebilir\nveya\nayarlardan manuel olarak\n indirebilirsiniz.</string>
+    <string name="bitti_sayilir">Herşey Hazır Sayılır...</string>
+
+
+    <string name="uyarilar">Uyarılar</string>
+    <string name="kuran">Kur\'an</string>
+    <string name="ayarlar">Ayarlar</string>
+    <string name="diger">Diğer..</string>
+    <string name="koksal_yazilim">KÖKSAL YAZILIM</string>
+    <string name="ayin_sekli">Ayın Şekli</string>
+
+
+    <!--Engelli insanlar için metin çevirileri -->
+    <string name="alt_bar">En alt kısım ayarlama çubuğu</string>
+    <string name="uyari_logo">Uyarı ayarlarını yapmaya yarar</string>
+    <string name="kuran_logo">Kuran\'ı kerim uygulamasını indir ve kuran oku</string>
+    <string name="ayar_logo">Uygulama ayarlarını yapmaya yarar</string>
+    <string name="diger_logo">Taha Yasin Köksal\'ın diğer uygulamaları</string>
+    <string name="koksal_yazilim_logo">Yazılımcıya instagramdan ulaş</string>
+    <string name="solmotif_logo">Sol motif</string>
+    <string name="sagmotif_logo">Sağ motif</string>
+    <string name="orta_motif_logo">Ortadaki motif</string>
+    <string name="ay_logo">Ay\'ın şekli</string>
+    <string name="namaz_vakitleri_logo">Namaz vakitleri kısmı</string>
+
+    <string name="koksalyazilim_url">https://www.tahayasinkoksal.com.tr</string>
+    <string name="tum_uygulamalar">https://play.google.com/store/apps/developer?id=K%C3%B6ksal+Yaz%C4%B1l%C4%B1m&amp;hl=tr</string>
+
+</resources>

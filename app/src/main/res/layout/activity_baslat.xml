@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_arkaplan"
+    tools:context=".BaslatActivity">
+
+    <Button
+        android:id="@+id/buttonBasla"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        android:onClick="sehirSec"
+        android:text="@string/baslayalim"
+        android:textSize="25sp"
+        android:textColor="@color/yaziRengi_2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bilgiMetnitextView" />
+
+    <TextView
+        android:id="@+id/bilgiBasliktextView"
+        android:layout_width="334dp"
+        android:layout_height="82dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/baslamdanOnce"
+        android:textAlignment="center"
+        android:textColor="@color/yaziRengi_3"
+        android:textColorLink="@android:color/holo_blue_bright"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/bilgiMetnitextView"
+        android:layout_width="334dp"
+        android:layout_height="298dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="24dp"
+        android:text="@string/baslama_ayar"
+        android:textAlignment="center"
+        android:textColor="@color/yaziRengi_1"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bilgiBasliktextView" />
+
+</android.support.constraint.ConstraintLayout>
