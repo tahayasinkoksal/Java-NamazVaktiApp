@@ -2,7 +2,7 @@
 
 İnsanların namaz vakitlerini görüp hatırlamaları için yaptığım Android platformu için yazdığım bir uygulama.<br>
 <br>
--Api vasıtasıyla verileri çekip işledim.<br>
+-Api ile verileri çekip işledim.<br>
 -Java dilini kullanarak yaptım.<br>
 <br>
 -------EN-------<br>
